@@ -17,4 +17,5 @@ Sin ejecutar infraestructura real mediante `terraform apply`.
 ## Autor
 
 Sergio Geovany Garcia Smith
+
 Carnet: 25008130
