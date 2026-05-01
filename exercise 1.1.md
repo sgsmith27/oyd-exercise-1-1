@@ -29,7 +29,7 @@ terraform plan
 
 ## Salida de terraform plan
 Terraform will perform the following actions:
-
+```text
 #aws_s3_bucket.exercise will be created
   + +resource "aws_s3_bucket" "exercise" {
       + acceleration_status         = (known after apply)
@@ -77,6 +77,7 @@ Terraform will perform the following actions:
     }
 
 Plan: 1 to add, 0 to change, 0 to destroy.
+```
 
 ## Preguntas
 1. ¿Cuántos recursos serán creados, modificados o destruidos?
@@ -108,6 +109,7 @@ tags = {
 }
 
 ## Sección diff del nuevo plan
+```text
  #aws_s3_bucket.exercise will be created
   + resource "aws_s3_bucket" "exercise" {
       + acceleration_status         = (known after apply)
@@ -155,6 +157,7 @@ tags = {
 
       + website (known after apply)
     }
+```
 
 ## Preguntas
 1. ¿Terraform propuso destruir y recrear el bucket o actualizarlo en sitio?
@@ -178,11 +181,17 @@ ls -la
 
 ## Salida
 total 24
+
 drwxr-xr-x 4 smith smith 4096 Apr 30 01:42 .
+
 drwxr-xr-x 3 smith smith 4096 Apr 30 01:31 ..
+
 drwxr-xr-x 7 smith smith 4096 Apr 30 01:32 .git
+
 drwxr-xr-x 3 smith smith 4096 Apr 30 01:36 .terraform
+
 -rw-r--r-- 1 smith smith 1407 Apr 30 01:36 .terraform.lock.hcl
+
 -rw-r--r-- 1 smith smith  382 Apr 30 01:41 main.tf
 
 ## Preguntas
